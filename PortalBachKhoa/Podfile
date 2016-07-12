@@ -1,0 +1,4 @@
+target 'PortalBachKhoa' do
+pod 'ENSwiftSideMenu'
+use_frameworks!
+end

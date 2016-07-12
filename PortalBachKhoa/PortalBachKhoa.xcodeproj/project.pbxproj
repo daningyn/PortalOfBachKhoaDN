@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44BFA40E1D26B0DA00A27F93 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFA40D1D26B0DA00A27F93 /* Constant.swift */; };
+		44BFA4101D26C25F00A27F93 /* ParseThongBao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFA40F1D26C25F00A27F93 /* ParseThongBao.swift */; };
+		44BFA4141D26ED7100A27F93 /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFA4121D26ED7100A27F93 /* TitleCell.swift */; };
+		44BFA4151D26ED7100A27F93 /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44BFA4131D26ED7100A27F93 /* TitleCell.xib */; };
+		44BFA4171D26EE6A00A27F93 /* TitleTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFA4161D26EE6A00A27F93 /* TitleTableVC.swift */; };
+		44C125D51D2AC65000074C3A /* QuyDinhVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C125D41D2AC64F00074C3A /* QuyDinhVC.swift */; };
+		44C125D71D2ACB4700074C3A /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C125D61D2ACB4700074C3A /* AboutUsVC.swift */; };
+		44D909CD1D28E1720006DB68 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D909CB1D28E1720006DB68 /* MainCell.swift */; };
+		44D909CE1D28E1720006DB68 /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D909CC1D28E1720006DB68 /* MainCell.xib */; };
+		44D909D01D28E5210006DB68 /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D909CF1D28E5210006DB68 /* MainTableView.swift */; };
+		44E1AE741D295E2B00D11544 /* NewsScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1AE721D295E2B00D11544 /* NewsScrollVC.swift */; };
+		44E1AE751D295E2B00D11544 /* NewsScrollVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E1AE731D295E2B00D11544 /* NewsScrollVC.xib */; };
+		44E1AE771D29667B00D11544 /* ParseNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1AE761D29667B00D11544 /* ParseNews.swift */; };
+		44F4F4901D2620A800639501 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F4F48F1D2620A800639501 /* MainVC.swift */; };
+		44F4F4931D26236700639501 /* ParseTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F4F4921D26236700639501 /* ParseTitle.swift */; };
+		44FD5A981D260D40004411AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD5A971D260D40004411AC /* AppDelegate.swift */; };
+		44FD5A9A1D260D40004411AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD5A991D260D40004411AC /* ViewController.swift */; };
+		44FD5A9D1D260D40004411AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FD5A9B1D260D40004411AC /* Main.storyboard */; };
+		44FD5A9F1D260D40004411AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FD5A9E1D260D40004411AC /* Assets.xcassets */; };
+		44FD5AA21D260D40004411AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FD5AA01D260D40004411AC /* LaunchScreen.storyboard */; };
+		44FD5AAA1D260D58004411AC /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FD5AA91D260D58004411AC /* libxml2.tbd */; };
+		44FD5ABC1D260E3C004411AC /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FD5AB71D260E3C004411AC /* TFHpple.m */; };
+		44FD5ABD1D260E3C004411AC /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FD5AB91D260E3C004411AC /* TFHppleElement.m */; };
+		44FD5ABE1D260E3C004411AC /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FD5ABB1D260E3C004411AC /* XPathQuery.m */; };
+		44FD5AC21D261A35004411AC /* MenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD5AC11D261A35004411AC /* MenuTableVC.swift */; };
+		44FD5AC41D261CFA004411AC /* MenuNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD5AC31D261CFA004411AC /* MenuNavigation.swift */; };
+		E5C188569F9DBDE797E69AAE /* Pods_PortalBachKhoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48674C2BD8197FE4616700B /* Pods_PortalBachKhoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		44BFA40D1D26B0DA00A27F93 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Model/Constant.swift; sourceTree = "<group>"; };
+		44BFA40F1D26C25F00A27F93 /* ParseThongBao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseThongBao.swift; path = Model/ParseThongBao.swift; sourceTree = "<group>"; };
+		44BFA4121D26ED7100A27F93 /* TitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleCell.swift; path = TableViewCell/TitleCell.swift; sourceTree = "<group>"; };
+		44BFA4131D26ED7100A27F93 /* TitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TitleCell.xib; path = TableViewCell/TitleCell.xib; sourceTree = "<group>"; };
+		44BFA4161D26EE6A00A27F93 /* TitleTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleTableVC.swift; path = ViewController/TitleTableVC.swift; sourceTree = "<group>"; };
+		44C125D41D2AC64F00074C3A /* QuyDinhVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuyDinhVC.swift; path = ViewController/QuyDinhVC.swift; sourceTree = "<group>"; };
+		44C125D61D2ACB4700074C3A /* AboutUsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutUsVC.swift; path = ViewController/AboutUsVC.swift; sourceTree = "<group>"; };
+		44D909CB1D28E1720006DB68 /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainCell.swift; path = TableViewCell/MainCell.swift; sourceTree = "<group>"; };
+		44D909CC1D28E1720006DB68 /* MainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainCell.xib; path = TableViewCell/MainCell.xib; sourceTree = "<group>"; };
+		44D909CF1D28E5210006DB68 /* MainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTableView.swift; path = ViewController/MainTableView.swift; sourceTree = "<group>"; };
+		44E1AE721D295E2B00D11544 /* NewsScrollVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsScrollVC.swift; path = ViewController/NewsScrollVC/NewsScrollVC.swift; sourceTree = "<group>"; };
+		44E1AE731D295E2B00D11544 /* NewsScrollVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewsScrollVC.xib; path = ViewController/NewsScrollVC/NewsScrollVC.xib; sourceTree = "<group>"; };
+		44E1AE761D29667B00D11544 /* ParseNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseNews.swift; path = Model/ParseNews.swift; sourceTree = "<group>"; };
+		44F4F48F1D2620A800639501 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = ViewController/MainVC.swift; sourceTree = "<group>"; };
+		44F4F4921D26236700639501 /* ParseTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseTitle.swift; path = Model/ParseTitle.swift; sourceTree = "<group>"; };
+		44FD5A941D260D40004411AC /* PortalBachKhoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortalBachKhoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44FD5A971D260D40004411AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44FD5A991D260D40004411AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44FD5A9C1D260D40004411AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44FD5A9E1D260D40004411AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44FD5AA11D260D40004411AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44FD5AA31D260D40004411AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44FD5AA91D260D58004411AC /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		44FD5AAC1D260E09004411AC /* PortalBachKhoa-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PortalBachKhoa-Bridging-Header.h"; sourceTree = "<group>"; };
+		44FD5AB61D260E3C004411AC /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHpple.h; path = TFHpple/TFHpple.h; sourceTree = "<group>"; };
+		44FD5AB71D260E3C004411AC /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHpple.m; path = TFHpple/TFHpple.m; sourceTree = "<group>"; };
+		44FD5AB81D260E3C004411AC /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHppleElement.h; path = TFHpple/TFHppleElement.h; sourceTree = "<group>"; };
+		44FD5AB91D260E3C004411AC /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHppleElement.m; path = TFHpple/TFHppleElement.m; sourceTree = "<group>"; };
+		44FD5ABA1D260E3C004411AC /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPathQuery.h; path = TFHpple/XPathQuery.h; sourceTree = "<group>"; };
+		44FD5ABB1D260E3C004411AC /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPathQuery.m; path = TFHpple/XPathQuery.m; sourceTree = "<group>"; };
+		44FD5ABF1D260F1B004411AC /* LibHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibHeader.h; sourceTree = "<group>"; };
+		44FD5AC11D261A35004411AC /* MenuTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableVC.swift; path = MenuController/MenuTableVC.swift; sourceTree = "<group>"; };
+		44FD5AC31D261CFA004411AC /* MenuNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuNavigation.swift; path = MenuController/MenuNavigation.swift; sourceTree = "<group>"; };
+		695E1A54F9D47B7F285B2390 /* Pods-PortalBachKhoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PortalBachKhoa.release.xcconfig"; path = "Pods/Target Support Files/Pods-PortalBachKhoa/Pods-PortalBachKhoa.release.xcconfig"; sourceTree = "<group>"; };
+		9C60736853786EFEA87DC35A /* Pods-PortalBachKhoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PortalBachKhoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PortalBachKhoa/Pods-PortalBachKhoa.debug.xcconfig"; sourceTree = "<group>"; };
+		A48674C2BD8197FE4616700B /* Pods_PortalBachKhoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PortalBachKhoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44FD5A911D260D40004411AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44FD5AAA1D260D58004411AC /* libxml2.tbd in Frameworks */,
+				E5C188569F9DBDE797E69AAE /* Pods_PortalBachKhoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		310E01556CB7FEEF8E747697 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A48674C2BD8197FE4616700B /* Pods_PortalBachKhoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44BFA4111D26ED4F00A27F93 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				44BFA4121D26ED7100A27F93 /* TitleCell.swift */,
+				44BFA4131D26ED7100A27F93 /* TitleCell.xib */,
+				44D909CB1D28E1720006DB68 /* MainCell.swift */,
+				44D909CC1D28E1720006DB68 /* MainCell.xib */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		44E1AE711D295DCC00D11544 /* NewsScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				44E1AE721D295E2B00D11544 /* NewsScrollVC.swift */,
+				44E1AE731D295E2B00D11544 /* NewsScrollVC.xib */,
+			);
+			name = NewsScrollView;
+			sourceTree = "<group>";
+		};
+		44F4F48E1D26203600639501 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44E1AE711D295DCC00D11544 /* NewsScrollView */,
+				44F4F48F1D2620A800639501 /* MainVC.swift */,
+				44BFA4161D26EE6A00A27F93 /* TitleTableVC.swift */,
+				44D909CF1D28E5210006DB68 /* MainTableView.swift */,
+				44C125D41D2AC64F00074C3A /* QuyDinhVC.swift */,
+				44C125D61D2ACB4700074C3A /* AboutUsVC.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		44F4F4911D26233C00639501 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44BFA40D1D26B0DA00A27F93 /* Constant.swift */,
+				44F4F4921D26236700639501 /* ParseTitle.swift */,
+				44BFA40F1D26C25F00A27F93 /* ParseThongBao.swift */,
+				44E1AE761D29667B00D11544 /* ParseNews.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		44FD5A8B1D260D40004411AC = {
+			isa = PBXGroup;
+			children = (
+				44FD5AA91D260D58004411AC /* libxml2.tbd */,
+				44FD5A961D260D40004411AC /* PortalBachKhoa */,
+				44FD5A951D260D40004411AC /* Products */,
+				B2B802A84BFB20018259448F /* Pods */,
+				310E01556CB7FEEF8E747697 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44FD5A951D260D40004411AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44FD5A941D260D40004411AC /* PortalBachKhoa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44FD5A961D260D40004411AC /* PortalBachKhoa */ = {
+			isa = PBXGroup;
+			children = (
+				44BFA4111D26ED4F00A27F93 /* TableViewCell */,
+				44F4F4911D26233C00639501 /* Model */,
+				44F4F48E1D26203600639501 /* ViewController */,
+				44FD5AC01D261A0F004411AC /* MenuController */,
+				44FD5AAB1D260D6F004411AC /* TFHpple */,
+				44FD5A971D260D40004411AC /* AppDelegate.swift */,
+				44FD5A991D260D40004411AC /* ViewController.swift */,
+				44FD5A9B1D260D40004411AC /* Main.storyboard */,
+				44FD5A9E1D260D40004411AC /* Assets.xcassets */,
+				44FD5AA01D260D40004411AC /* LaunchScreen.storyboard */,
+				44FD5AAC1D260E09004411AC /* PortalBachKhoa-Bridging-Header.h */,
+				44FD5AA31D260D40004411AC /* Info.plist */,
+				44FD5ABF1D260F1B004411AC /* LibHeader.h */,
+			);
+			path = PortalBachKhoa;
+			sourceTree = "<group>";
+		};
+		44FD5AAB1D260D6F004411AC /* TFHpple */ = {
+			isa = PBXGroup;
+			children = (
+				44FD5AB61D260E3C004411AC /* TFHpple.h */,
+				44FD5AB71D260E3C004411AC /* TFHpple.m */,
+				44FD5AB81D260E3C004411AC /* TFHppleElement.h */,
+				44FD5AB91D260E3C004411AC /* TFHppleElement.m */,
+				44FD5ABA1D260E3C004411AC /* XPathQuery.h */,
+				44FD5ABB1D260E3C004411AC /* XPathQuery.m */,
+			);
+			name = TFHpple;
+			sourceTree = "<group>";
+		};
+		44FD5AC01D261A0F004411AC /* MenuController */ = {
+			isa = PBXGroup;
+			children = (
+				44FD5AC11D261A35004411AC /* MenuTableVC.swift */,
+				44FD5AC31D261CFA004411AC /* MenuNavigation.swift */,
+			);
+			name = MenuController;
+			sourceTree = "<group>";
+		};
+		B2B802A84BFB20018259448F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C60736853786EFEA87DC35A /* Pods-PortalBachKhoa.debug.xcconfig */,
+				695E1A54F9D47B7F285B2390 /* Pods-PortalBachKhoa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44FD5A931D260D40004411AC /* PortalBachKhoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44FD5AA61D260D40004411AC /* Build configuration list for PBXNativeTarget "PortalBachKhoa" */;
+			buildPhases = (
+				26E0750092CDD6D78AC0EEEE /* [CP] Check Pods Manifest.lock */,
+				44FD5A901D260D40004411AC /* Sources */,
+				44FD5A911D260D40004411AC /* Frameworks */,
+				44FD5A921D260D40004411AC /* Resources */,
+				5F368AE6887E4020B52D2DFD /* [CP] Embed Pods Frameworks */,
+				C949D8829CF5D45B976D3C3B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PortalBachKhoa;
+			productName = PortalBachKhoa;
+			productReference = 44FD5A941D260D40004411AC /* PortalBachKhoa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44FD5A8C1D260D40004411AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Danh Nguyen";
+				TargetAttributes = {
+					44FD5A931D260D40004411AC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 44FD5A8F1D260D40004411AC /* Build configuration list for PBXProject "PortalBachKhoa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44FD5A8B1D260D40004411AC;
+			productRefGroup = 44FD5A951D260D40004411AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44FD5A931D260D40004411AC /* PortalBachKhoa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44FD5A921D260D40004411AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E1AE751D295E2B00D11544 /* NewsScrollVC.xib in Resources */,
+				44BFA4151D26ED7100A27F93 /* TitleCell.xib in Resources */,
+				44FD5AA21D260D40004411AC /* LaunchScreen.storyboard in Resources */,
+				44FD5A9F1D260D40004411AC /* Assets.xcassets in Resources */,
+				44FD5A9D1D260D40004411AC /* Main.storyboard in Resources */,
+				44D909CE1D28E1720006DB68 /* MainCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26E0750092CDD6D78AC0EEEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F368AE6887E4020B52D2DFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PortalBachKhoa/Pods-PortalBachKhoa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C949D8829CF5D45B976D3C3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PortalBachKhoa/Pods-PortalBachKhoa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44FD5A901D260D40004411AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44BFA4141D26ED7100A27F93 /* TitleCell.swift in Sources */,
+				44FD5ABD1D260E3C004411AC /* TFHppleElement.m in Sources */,
+				44E1AE741D295E2B00D11544 /* NewsScrollVC.swift in Sources */,
+				44BFA4101D26C25F00A27F93 /* ParseThongBao.swift in Sources */,
+				44FD5A9A1D260D40004411AC /* ViewController.swift in Sources */,
+				44C125D51D2AC65000074C3A /* QuyDinhVC.swift in Sources */,
+				44FD5AC41D261CFA004411AC /* MenuNavigation.swift in Sources */,
+				44FD5ABE1D260E3C004411AC /* XPathQuery.m in Sources */,
+				44C125D71D2ACB4700074C3A /* AboutUsVC.swift in Sources */,
+				44FD5ABC1D260E3C004411AC /* TFHpple.m in Sources */,
+				44F4F4901D2620A800639501 /* MainVC.swift in Sources */,
+				44D909CD1D28E1720006DB68 /* MainCell.swift in Sources */,
+				44E1AE771D29667B00D11544 /* ParseNews.swift in Sources */,
+				44FD5AC21D261A35004411AC /* MenuTableVC.swift in Sources */,
+				44BFA4171D26EE6A00A27F93 /* TitleTableVC.swift in Sources */,
+				44BFA40E1D26B0DA00A27F93 /* Constant.swift in Sources */,
+				44D909D01D28E5210006DB68 /* MainTableView.swift in Sources */,
+				44F4F4931D26236700639501 /* ParseTitle.swift in Sources */,
+				44FD5A981D260D40004411AC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		44FD5A9B1D260D40004411AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44FD5A9C1D260D40004411AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44FD5AA01D260D40004411AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44FD5AA11D260D40004411AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44FD5AA41D260D40004411AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44FD5AA51D260D40004411AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44FD5AA71D260D40004411AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C60736853786EFEA87DC35A /* Pods-PortalBachKhoa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/LisM/Desktop/MyLearning/Swift/PortalBachKhoa/PortalBachKhoa/LibHeader.h;
+				INFOPLIST_FILE = PortalBachKhoa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DanhNguyen.PortalBachKhoa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PortalBachKhoa/PortalBachKhoa-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/PortalBachKhoa/LibHeader.h\"";
+			};
+			name = Debug;
+		};
+		44FD5AA81D260D40004411AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 695E1A54F9D47B7F285B2390 /* Pods-PortalBachKhoa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/LisM/Desktop/MyLearning/Swift/PortalBachKhoa/PortalBachKhoa/LibHeader.h;
+				INFOPLIST_FILE = PortalBachKhoa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DanhNguyen.PortalBachKhoa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PortalBachKhoa/PortalBachKhoa-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/PortalBachKhoa/LibHeader.h\"";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44FD5A8F1D260D40004411AC /* Build configuration list for PBXProject "PortalBachKhoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44FD5AA41D260D40004411AC /* Debug */,
+				44FD5AA51D260D40004411AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44FD5AA61D260D40004411AC /* Build configuration list for PBXNativeTarget "PortalBachKhoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44FD5AA71D260D40004411AC /* Debug */,
+				44FD5AA81D260D40004411AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44FD5A8C1D260D40004411AC /* Project object */;
+}
