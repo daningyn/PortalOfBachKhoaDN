@@ -475,7 +475,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/LisM/Desktop/MyLearning/Swift/PortalBachKhoa/PortalBachKhoa/LibHeader.h;
+				GCC_PREFIX_HEADER = /Users/LisM/Desktop/MyLearning/Swift/PortalOfBachKhoaDN/PortalBachKhoa/PortalBachKhoa/LibHeader.h;
 				INFOPLIST_FILE = PortalBachKhoa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanhNguyen.PortalBachKhoa;
@@ -493,7 +493,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/LisM/Desktop/MyLearning/Swift/PortalBachKhoa/PortalBachKhoa/LibHeader.h;
+				GCC_PREFIX_HEADER = /Users/LisM/Desktop/MyLearning/Swift/PortalOfBachKhoaDN/PortalBachKhoa/PortalBachKhoa/LibHeader.h;
 				INFOPLIST_FILE = PortalBachKhoa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanhNguyen.PortalBachKhoa;
