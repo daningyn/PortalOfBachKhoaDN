@@ -15,13 +15,13 @@ class MenuNavigation: ENSideMenuNavigationController {
         super.viewDidLoad()
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let menu = storyboard.instantiateViewControllerWithIdentifier("MenuTableVC") as! MenuTableVC
+        let menu = storyboard.instantiateViewController(withIdentifier: "MenuTableVC") as! MenuTableVC
         
-        sideMenu = ENSideMenu(sourceView: self.view, menuViewController: menu, menuPosition: .Left, blurStyle: .Light)
+        sideMenu = ENSideMenu(sourceView: self.view, menuViewController: menu, menuPosition: .left, blurStyle: .light)
         
         sideMenu?.menuWidth = 180.0
         
-        self.view.bringSubviewToFront(self.navigationBar)
+        self.view.bringSubview(toFront: self.navigationBar)
 
         // Do any additional setup after loading the view.
     }

@@ -9,35 +9,35 @@
 import Foundation
 
 protocol NewsStore {
-    func getNews(news: String, listLinkNews: [String])
+    func getNews(_ news: String, listLinkNews: [String])
 }
 
 class ParseNews {
     
-    var contributorsUrl: NSURL?
+    var contributorsUrl: URL?
     var checkTagA = false
     var thongBao = ""
     var listLink: [String] = []
     var newsStoreDelegate: NewsStore?
     
     init(url: String) {
-        self.contributorsUrl = NSURL(string: url)!
+        self.contributorsUrl = URL(string: url)!
     }
     
     init() {
         self.contributorsUrl = nil
     }
     
-    func setURL(url: String) {
-        self.contributorsUrl = NSURL(string: url)
+    func setURL(_ url: String) {
+        self.contributorsUrl = URL(string: url)
     }
     
-    func loadNewsOnDaoTao(datePicked: String, nextDate: String, titlePicked: String, nextTitle: String) {
+    func loadNewsOnDaoTao(_ datePicked: String, nextDate: String, titlePicked: String, nextTitle: String) {
         if self.contributorsUrl != nil {
-            let contributorsHtmlData = NSData(contentsOfURL: contributorsUrl!)
-            let contributorsParser = TFHpple(HTMLData: contributorsHtmlData)
+            let contributorsHtmlData = try? Data(contentsOf: contributorsUrl!)
+            let contributorsParser = TFHpple(htmlData: contributorsHtmlData)
             let contributorsXpathQueryString: String = "//body"
-            let contributorsNodes: Array = contributorsParser.searchWithXPathQuery(contributorsXpathQueryString)
+            let contributorsNodes: Array = contributorsParser!.search(withXPathQuery: contributorsXpathQueryString)
             var check = false
             for element in contributorsNodes {
                 for i in (element as! TFHppleElement).children {
@@ -59,7 +59,7 @@ class ParseNews {
         newsStoreDelegate?.getNews(self.thongBao, listLinkNews: self.listLink)
     }
     
-    private func loadChild(element: TFHppleElement) {
+    fileprivate func loadChild(_ element: TFHppleElement) {
 //        print(element.tagName)
         if element.tagName == "a" {
             checkTagA = true
