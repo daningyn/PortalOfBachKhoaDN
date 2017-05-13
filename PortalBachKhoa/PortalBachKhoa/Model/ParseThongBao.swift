@@ -10,34 +10,35 @@ import Foundation
 import UIKit
 
 protocol TitleStore {
-    func getListTitleStore(listTitleDate: [String], listTitle: [String])
+    func getListTitleStore(_ listTitleDate: [String], listTitle: [String])
 }
 
 class ParseThongBao {
     
-    var contributorsUrl: NSURL?
+    var contributorsUrl: URL?
     var titleStoreDelegate: TitleStore?
     
     init(url: String) {
-        self.contributorsUrl = NSURL(string: url)!
+        self.contributorsUrl = URL(string: url)!
     }
     
     init() {
         self.contributorsUrl = nil
     }
     
-    func setURL(url: String) {
-        self.contributorsUrl = NSURL(string: url)
+    func setURL(_ url: String) {
+        self.contributorsUrl = URL(string: url)
     }
     
     func loadThongBaoOnDaoTao() {
         var listTitleDate: [String] = []
         var listTitle: [String] = []
         if self.contributorsUrl != nil {
-            let contributorsHtmlData = NSData(contentsOfURL: contributorsUrl!)
-            let contributorsParser = TFHpple(HTMLData: contributorsHtmlData)
+            let contributorsHtmlData = try? Data(contentsOf: contributorsUrl!)
+            let contributorsParser = TFHpple(htmlData: contributorsHtmlData)
             var contributorsXpathQueryString: String = "//span[@style='font-size:13.0pt;line-height:100%;font-family:times new roman,serif;color:red']"
-            var contributorsNodes: Array = contributorsParser.searchWithXPathQuery(contributorsXpathQueryString)
+            var contributorsNodes: Array = contributorsParser!.search(withXPathQuery: contributorsXpathQueryString)
+            
             for element in contributorsNodes {
                 for i in (element as! TFHppleElement).children {
                     listTitleDate.append((i as! TFHppleElement).content)
@@ -45,7 +46,7 @@ class ParseThongBao {
             }
             
             contributorsXpathQueryString = "//span[@style='font-size:13.0pt;line-height:100%;font-family:times new roman,serif']/span"
-            contributorsNodes = contributorsParser.searchWithXPathQuery(contributorsXpathQueryString)
+            contributorsNodes = (contributorsParser?.search(withXPathQuery: contributorsXpathQueryString))!
             for element in contributorsNodes {
                 if (element as! TFHppleElement).firstChild?.content != nil {
                     listTitle.append((element as! TFHppleElement).firstChild.content)

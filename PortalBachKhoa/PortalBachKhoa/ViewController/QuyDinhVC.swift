@@ -13,12 +13,12 @@ class QuyDinhVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let barButton = UIButton(frame: CGRectMake(0,0,20,20))
-        barButton.setImage(UIImage(named: "toggle"), forState: .Normal)
-        barButton.addTarget(self, action: #selector(self.clickToggle), forControlEvents: .TouchUpInside)
+        let barButton = UIButton(frame: CGRect(x: 0,y: 0,width: 20,height: 20))
+        barButton.setImage(UIImage(named: "toggle"), for: UIControlState())
+        barButton.addTarget(self, action: #selector(self.clickToggle), for: .touchUpInside)
         let barItemButton = UIBarButtonItem(customView: barButton)
-        self.navigationController?.navigationBar.hidden = false
-        self.navigationItem.setLeftBarButtonItem(barItemButton, animated: true)
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationItem.setLeftBarButton(barItemButton, animated: true)
         self.navigationItem.title = "Quy chế và quy định"
     }
 
@@ -29,27 +29,27 @@ class QuyDinhVC: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 4
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         switch indexPath.row {
         case 0:
-            UIApplication.sharedApplication().openURL(NSURL(string: Constant.kLINK_QUYCHE_1)!)
+            UIApplication.shared.openURL(URL(string: Constant.kLINK_QUYCHE_1)!)
         case 1:
-            UIApplication.sharedApplication().openURL(NSURL(string: Constant.kLINK_QUYCHE_2)!)
+            UIApplication.shared.openURL(URL(string: Constant.kLINK_QUYCHE_2)!)
         case 2:
-            UIApplication.sharedApplication().openURL(NSURL(string: Constant.kLINK_QUYCHE_3)!)
+            UIApplication.shared.openURL(URL(string: Constant.kLINK_QUYCHE_3)!)
         default:
-            UIApplication.sharedApplication().openURL(NSURL(string: Constant.kLINK_QUYCHE_4)!)
+            UIApplication.shared.openURL(URL(string: Constant.kLINK_QUYCHE_4)!)
         }
     }
     

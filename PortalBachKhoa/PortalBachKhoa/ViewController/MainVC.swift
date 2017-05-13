@@ -12,14 +12,14 @@ import ENSwiftSideMenu
 class MainVC: UIViewController, UIGestureRecognizerDelegate,  ENSideMenuDelegate, LinkASPStore {
     
     @IBOutlet weak var imgView: UIImageView!
-    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     var singleTap: UITapGestureRecognizer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationController?.navigationBar.hidden = true
+        self.navigationController?.navigationBar.isHidden = true
         
         singleTap = UITapGestureRecognizer(target: self, action: #selector(self.toggleSideMenu))
         singleTap.delegate = self
@@ -46,7 +46,7 @@ class MainVC: UIViewController, UIGestureRecognizerDelegate,  ENSideMenuDelegate
     
     //#MARK: - Delegate Define
     
-    func getListLinkAPS(listLink: [String]) {
+    func getListLinkAPS(_ listLink: [String]) {
         self.appDelegate.listLinkASP = listLink
     }
 

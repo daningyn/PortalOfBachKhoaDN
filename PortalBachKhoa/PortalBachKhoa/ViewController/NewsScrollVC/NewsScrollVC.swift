@@ -13,7 +13,7 @@ class NewsScrollVC: UIViewController, NewsStore {
     @IBOutlet weak var btnLink: UIButton!
     @IBOutlet weak var lblNews: UILabel!
     @IBOutlet weak var viewScroll: UIView!
-    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var alert: UIAlertController?
 
     override func viewDidLoad() {
@@ -30,22 +30,22 @@ class NewsScrollVC: UIViewController, NewsStore {
     
     //#MARK: - Define Store
     
-    func getNews(news: String, listLinkNews: [String]) {
+    func getNews(_ news: String, listLinkNews: [String]) {
         if listLinkNews.count == 0 {
-            self.btnLink.enabled = false
-            self.btnLink.backgroundColor = UIColor.lightGrayColor()
+            self.btnLink.isEnabled = false
+            self.btnLink.backgroundColor = UIColor.lightGray
         }else {
-            self.btnLink.enabled = true
-            alert = UIAlertController(title: "Link", message: nil, preferredStyle: .ActionSheet)
+            self.btnLink.isEnabled = true
+            alert = UIAlertController(title: "Link", message: nil, preferredStyle: .actionSheet)
             for i in 0..<listLinkNews.count {
-                let linkBtn = UIAlertAction(title: "Link \(i+1)", style: .Default, handler: { (action) in
-                    let url = listLinkNews[i].stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
-                    UIApplication.sharedApplication().openURL(NSURL(string: url!)!)
+                let linkBtn = UIAlertAction(title: "Link \(i+1)", style: .default, handler: { (action) in
+                    let url = listLinkNews[i].addingPercentEscapes(using: String.Encoding.utf8)
+                    UIApplication.shared.openURL(URL(string: url!)!)
                 })
                 alert!.addAction(linkBtn)
             }
-            let cancelBtn = UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action) in
-                self.dismissViewControllerAnimated(true, completion: nil)
+            let cancelBtn = UIAlertAction(title: "Cancel", style: .cancel, handler: { (action) in
+                self.dismiss(animated: true, completion: nil)
             })
             alert!.addAction(cancelBtn)
         }
@@ -59,8 +59,8 @@ class NewsScrollVC: UIViewController, NewsStore {
     
     //#MARK: - Define Handle
     
-    @IBAction func clickedBtnLink(sender: AnyObject) {
-        self.presentViewController(alert!, animated: true, completion: nil)
+    @IBAction func clickedBtnLink(_ sender: AnyObject) {
+        self.present(alert!, animated: true, completion: nil)
     }
 
 }

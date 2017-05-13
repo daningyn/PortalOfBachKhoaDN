@@ -10,33 +10,33 @@ import Foundation
 import UIKit
 
 protocol LinkASPStore {
-    func getListLinkAPS(listLink: [String])
+    func getListLinkAPS(_ listLink: [String])
 }
 
 class ParseTitle {
     
-    var contributorsUrl: NSURL?
+    var contributorsUrl: URL?
     var linkASPStoreDelegate: LinkASPStore?
     
     init(url: String) {
-        self.contributorsUrl = NSURL(string: url)!
+        self.contributorsUrl = URL(string: url)!
     }
     
     init() {
         self.contributorsUrl = nil
     }
     
-    func setURL(url: String) {
-        self.contributorsUrl = NSURL(string: url)
+    func setURL(_ url: String) {
+        self.contributorsUrl = URL(string: url)
     }
     
     func loadTitleOnDaoTao() {
         var listLinkASP: [String] = []
         if self.contributorsUrl != nil {
-            let contributorsHtmlData = NSData(contentsOfURL: contributorsUrl!)
-            let contributorsParser = TFHpple(HTMLData: contributorsHtmlData)
+            let contributorsHtmlData = try? Data(contentsOf: contributorsUrl!)
+            let contributorsParser = TFHpple(htmlData: contributorsHtmlData)
             let contributorsXpathQueryString: String = "//iframe"
-            let contributorsNodes: Array = contributorsParser.searchWithXPathQuery(contributorsXpathQueryString)
+            let contributorsNodes: Array = contributorsParser!.search(withXPathQuery: contributorsXpathQueryString)
             for element in contributorsNodes {
                 listLinkASP.append((element as! TFHppleElement).attributes["src"]! as! String)
             }
